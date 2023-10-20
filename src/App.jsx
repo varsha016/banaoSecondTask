@@ -15,7 +15,6 @@ const App = () => {
 
       </ScrollToTop>
     </BrowserRouter>
-    <div>App</div>
   </>
   )
 }
