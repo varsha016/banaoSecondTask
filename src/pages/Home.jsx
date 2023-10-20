@@ -35,14 +35,15 @@ const Home = () => {
         <div className='bg'>
             <div className="container mt-2 ">
                 <div className='row'>
-                    {!allUsers ? <div className="spinner-border " role="status">
-                        <span className="visually-hidden">Loading...</span>
-                    </div> : ""}
+
 
                     <div className="col-sm-6 mt-5">
 
                         <div className="card">
                             <strong className="card-header fs-2 text-center text-success">USER DETAILS</strong>
+                            {!allUsers ? <div className="spinner-border " role="status">
+                                <span className="visually-hidden">Loading...</span>
+                            </div> : ""}
                             {allUsers?.map(item => <div key={item.id} className="card-body" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={e => {
                                 // handleToggle()
                                 setdata(item)
